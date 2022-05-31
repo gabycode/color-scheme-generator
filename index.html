@@ -6,14 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Color Scheme Generator</title>
 
+        <link rel="icon" href="./icon/color-circle.png">
+
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
+        <section class="container">
             <h1>Color Scheme Generator</h1>
+            <p>1. Select a color.</p>
+            <p>2. Select a mode.</p>
+            <p>3. Click the button & get a color scheme!</p>
             <div class="color-generator">
                 <form id="color-form">
                     <input type="color" id="color">
@@ -28,12 +33,11 @@
                     </select>
                     <button id="btn">Get color scheme</button>
                 </form>
-            </div>
             
             <main>
                 <div id="scheme-display"></div>
             </main>
-        </div>
+        </section>
         <script src="index.js"></script>
     </body>
 </html>
