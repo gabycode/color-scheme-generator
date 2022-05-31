@@ -6,16 +6,73 @@
 
 body {
     font-family: 'PT Mono', monospace;
-    background-color: antiquewhite;
+    background-color: #1c1c1c;
 }
 
 .container {
     max-width: 500px;
     margin: 1em auto;
-    background-color: aliceblue;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 1em;
+}
+
+.container h1 {
+    padding: .25em 0;
+}
+
+.container p {
+    padding: .25em;
+}
+
+form {
+    margin: 1em 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btn, #options {
+    cursor: pointer;
+    border: 1px solid #6A6262;
+    padding: .5em;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: 0.3s;
+}
+
+#btn:hover,
+#btn:focus,
+#options:hover,
+#options:focus {
+    background-color: #f0f0f0;
+}
+
+#scheme-display {
+    display: flex;
+    flex-direction: row;
+}
+
+.color-scheme {
+    width: 100%;
+}
+
+.color-item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 60vh;
     text-align: center;
 }
 
-#options {
-    cursor: pointer;
+.color-item p {
+    background-color: #fff;
+    width: 100%;
+    padding: 1em;
+    font-size: .75rem;
+}
+
+@media (max-width: 570px) {
+    body {
+        padding: 0 1em;
+    }
 }
